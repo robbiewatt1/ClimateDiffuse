@@ -2,3 +2,4 @@ Models*
 results*
 runs*
 .idea/
+*.pyc
