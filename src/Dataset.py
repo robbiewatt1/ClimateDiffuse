@@ -6,10 +6,10 @@ import xarray as xr
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 
+
 class UpscaleDataset(torch.utils.data.Dataset):
     """
-    Dataset class of images with a low resolution and a high resolution counterpart
-    for the US continent.
+    Dataset class of images with a low resolution and a high resolution counterpart.
     """
 
     def __init__(self, data_dir, 
