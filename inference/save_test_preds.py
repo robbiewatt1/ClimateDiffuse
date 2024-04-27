@@ -23,15 +23,7 @@ model_dir="/home/Everyone/Model_Inference/"
 save_dir = f"../output/{modelname}/"
 
 # Load model, sample function
-if modelname == "DDPM":
-    sample_function = sample_diffusion
-    # Load model
-    model = UNet(input_channels=8, output_channels=6,
-               conditional_dims=2).to(device)
-    model.load_state_dict(torch.load(f"{model_dir}/Model_chpt/DDPM.pt"))
-    num_steps = 300
-    rngs = range(0, 30)
-elif modelname == "Diffusion":
+if modelname == "Diffusion":
     model = EDMPrecond((256, 128), 8,
                             3).to(device)
     model.load_state_dict(torch.load(f"{model_dir}/Model_chpt/diffusion.pt"))
