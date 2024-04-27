@@ -3,8 +3,8 @@ import xarray as xr
 import torch
 from torch.utils.data.dataloader import DataLoader
 
-sys.path.append('/home/Everyone/Model_Inference/')
-from SampleModels import *
+sys.path.append('../src')
+from Inference import *
 
 # Test years: 2018-2022
 year_start = 2018

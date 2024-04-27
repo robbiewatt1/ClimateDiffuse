@@ -10,9 +10,8 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 from compute_spectrum import compute_spectrum2d
 
-# Models - lines shown in different colors
+# Models
 models = ["Truth", "Diffusion", "UNet", "LinearInterpolation"]
-colors = ["black", "red", "blue", "grey"]
 
 # Variables - defines three separate subplots
 varnames = ["VAR_2T", "VAR_10U", "VAR_10V"]

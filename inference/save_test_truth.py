@@ -6,8 +6,7 @@ from torch.utils.data.dataloader import DataLoader
 
 sys.path.append('../src/')
 from DatasetUS import *
-sys.path.append('/home/Everyone/Model_Inference/')
-from SampleModels import *
+from Inference import *
 
 ## Saves US dataset over test years for quicker analysis
 ## Test years: 2018-2022
