@@ -1,7 +1,9 @@
 ## Generative diffusion-based downscaling for climate
 ### Robbie A. Watt & Laura A. Mansfield
 
-This repo contains code to go alongside Watt & Mansfield (2024) preprint. 
+![plot](./example.png)
+
+This repo contains code to go alongside Watt & Mansfield (2024) preprint. In this preprint, we apply a diffusion based model and a Unet to a downscaling problem with climate data. The diffusion model is based on the implementation by T. Karras et al. (<https://arxiv.org/abs/2206.00364>) and the code is addapted from <https://github.com/NVlabs/edm>.
 
 
 ## File structure
@@ -15,6 +17,7 @@ This repo contains code to go alongside Watt & Mansfield (2024) preprint.
 The script 'download_ERA5/ERA5_download_my_dates_sfc.sh` downloads the variables (temperature at 2m and zonal and meridional winds at 100 hPa) for all years of ERA5 up to 2022 and saves files into a directory named `data/`. You may need to edit data directories. Note that we subsample in time to reduce the size of the dataset (see file `preprocessing_subsample.py`). Data is concatenated into yearly samples and saved as `samples_{year}.nc`. 
 
 ### Training
+To train either the diffusion or unet models from scratch, simply run the `src/TrainDiffusion.py` or `src/TrainUnet.py` script from the project root directory.
 
 ### Inference
 After training, the inference scripts can be run in the following order:
