@@ -1,5 +1,5 @@
 ## Generative diffusion-based downscaling for climate
-### Robbie A. Watt & Laura A. Mansfield
+### Robbie A. Watt & Laura A. Mansfield      <https://arxiv.org/abs/2404.17752>
 
 ![plot](./example.png)
 
