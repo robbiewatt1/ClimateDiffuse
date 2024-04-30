@@ -33,6 +33,13 @@ Plotting scripts:
 
 
 ## Citation
-
-
-
+```
+@misc{watt2024generative,
+      title={Generative Diffusion-based Downscaling for Climate}, 
+      author={Robbie A. Watt and Laura A. Mansfield},
+      year={2024},
+      eprint={2404.17752},
+      archivePrefix={arXiv},
+      primaryClass={physics.ao-ph}
+}
+```
