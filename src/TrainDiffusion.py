@@ -158,8 +158,7 @@ def main():
 
     # Define device
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    network = Network.EDMPrecond((256, 128), 8,
-                                 3, label_dim=2)
+    network = Network.EDMPrecond((256, 128), 8, 3, label_dim=2)
     network.to(device)
 
     # define the datasets
@@ -210,3 +209,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

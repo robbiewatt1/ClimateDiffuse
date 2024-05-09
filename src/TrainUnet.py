@@ -2,7 +2,7 @@ import torch
 import torchvision
 from DatasetUS import UpscaleDataset
 import matplotlib.pyplot as plt
-from Network import DhariwalUNet
+from Network import UNet
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
@@ -106,9 +106,7 @@ def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # define the ml model
-    unet_model = DhariwalUNet((256, 128), 5, 3,
-                              label_dim=2, use_diffuse=False)
-    unet_model.load_state_dict(torch.load("./Models_unet/5.pt"))
+    unet_model = UNet((256, 128), 5, 3, label_dim=2, use_diffuse=False)
     unet_model.to(device)
 
     # define the datasets
