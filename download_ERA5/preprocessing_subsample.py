@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import random
 import argparse
 
-datadir = "./data/"
+datadir = "../data/"
 
 # Get arguments from argparser
 parser = argparse.ArgumentParser()

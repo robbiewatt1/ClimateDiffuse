@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--year', metavar='year', type=int)
 parser.add_argument('--remove_files', metavar='remove_files', action=argparse.BooleanOptionalAction)
 
-datadir = "./data/"
+datadir = "../data/"
 
 ## Provide year and month as input to this file using args
 args = parser.parse_args()
