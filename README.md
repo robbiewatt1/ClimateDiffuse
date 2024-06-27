@@ -16,6 +16,11 @@ This repo contains code to go alongside Watt & Mansfield (2024) preprint. In thi
 ### Download ERA5 data
 The script `download_ERA5/ERA5_download_my_dates_sfc.sh` downloads the variables (temperature at 2m and zonal and meridional winds at 100 hPa) for all years of ERA5 up to 2022 and saves files into a directory named `data/`. You may need to edit data directories. Note that we subsample in time to reduce the size of the dataset (see file `preprocessing_subsample.py`). Data is concatenated into yearly samples and saved as `samples_{year}.nc`. 
 
+We also use variables that are constant in time for the land sea mask and the topography. These are currently stored in `data/ERA5_const_sfc_variables.nc` or can be manually downloaded from ERA5 Copernicus store ( https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form) by checking `geopotential` (z) and `land-sea mask` (lsm) (found under `Other`) and saving these to `netcdf`. 
+
+## Dependencies
+python>=3.9, torch, tensorboard, xarray, netcdf4, cartopy, matplotlib, scipy, numpy
+
 ### Training
 To train either the diffusion or unet models from scratch, simply run the `src/TrainDiffusion.py` or `src/TrainUnet.py` script from the project root directory.
 
