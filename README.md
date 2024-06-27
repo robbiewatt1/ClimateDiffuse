@@ -18,7 +18,7 @@ The script `download_ERA5/ERA5_download_my_dates_sfc.sh` downloads the variables
 
 We also use variables that are constant in time for the land sea mask and the topography. These are currently stored in `data/ERA5_const_sfc_variables.nc` or can be manually downloaded from ERA5 Copernicus store ( https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form) by checking `geopotential` (z) and `land-sea mask` (lsm) (found under `Other`) and saving these to `netcdf`. 
 
-## Dependencies
+### Dependencies
 python>=3.9, torch, tensorboard, xarray, netcdf4, cartopy, matplotlib, scipy, numpy
 
 ### Training
