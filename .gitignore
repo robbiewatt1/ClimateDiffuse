@@ -3,3 +3,11 @@ results*
 runs*
 .idea/
 *.pyc
+*.DStore
+*.ipynb_checkpoints*
+
+# Data
+data/samples_*.nc
+data/e5.*.nc
+
+
