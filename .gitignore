@@ -3,7 +3,7 @@ results*
 runs*
 .idea/
 *.pyc
-*.DStore
+*.DS_Store
 *.ipynb_checkpoints*
 
 # Data
