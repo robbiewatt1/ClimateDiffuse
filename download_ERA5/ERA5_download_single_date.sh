@@ -1,7 +1,7 @@
 #!/bin/bash
 # We will download every few days so they aren't too correlated
 # over N years so that this turns out to be 1Tb?
-dir="./data/"
+dir="../data/"
 opts="-N -c -P ${dir}"
 
 year=1987
