@@ -114,7 +114,7 @@ def main():
     dataset_train = UpscaleDataset(datadir, year_start=1950, year_end=2017,
                                    constant_variables=["lsm", "z"])
 
-    dataset_test = UpscaleDataset(datadir, year_start=2017, year_end=2022,
+    dataset_test = UpscaleDataset(datadir, year_start=2017, year_end=2018,
                                   constant_variables=["lsm", "z"])
 
     dataloader_train = torch.utils.data.DataLoader(
